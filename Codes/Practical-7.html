@@ -13,9 +13,12 @@
 <body onload="loading()">
     <div class="container">
         <div class="box">
-
+            <div class="rotate"></div>
         </div>
-        <div>Loading<span>...</span></div>
+        <div class="shadow"></div>
+        <div>
+            <p> Loading<span>...</span></p>
+        </div>
     </div>
     <div class="container1">
         <header id="Header">
@@ -53,11 +56,11 @@
         </footer>
     </div>
     <script>
-             function loading(){
-            setTimeout(disableloder,1000);
+        function loading() {
+            setTimeout(disableloder, 3000);
         }
-        function disableloder(){
-            document.querySelector('.container').style.display='none'
+        function disableloder() {
+            document.querySelector('.container').style.display = 'none'
             document.querySelector(".container1").style.display = "block";
         }
     </script>

@@ -12,7 +12,7 @@ h2 {
     margin: 20px 0px;
     text-align: center;
     font-size: 40px;
-    text-shadow:5px 5px 5px gray;
+    text-shadow: 5px 5px 5px gray;
 }
 
 #Header {
@@ -24,7 +24,7 @@ h2 {
     line-height: 100px;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
-    /* border: 2px solid red; */ 
+    /* border: 2px solid red; */
     /* position: fixed;
     top: 0; */
 }
@@ -34,12 +34,13 @@ h2 {
     background-color: rgb(94, 160, 236);
     width: 100%;
     height: 100vh;
-    margin-top:25px;
+    margin-top: 25px;
     /*viweport hight*/
     text-align: center;
     line-height: 100vh;
     overflow: scroll;
 }
+
 #sec1 {
     display: flex;
     justify-content: space-evenly;
@@ -56,7 +57,8 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-#sec2{
+
+#sec2 {
     display: flex;
 }
 
@@ -70,7 +72,8 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-aside{
+
+aside {
     width: 50%;
     height: 500px;
     /* border: 2px solid rebeccapurple; */
@@ -79,7 +82,7 @@ aside{
     margin-left: 20px;
 }
 
-aside .art{
+aside .art {
     color: white;
     background-color: orange;
     font-size: 50px;
@@ -89,21 +92,23 @@ aside .art{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius:12px ;
-    border-bottom-left-radius:12px ;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
     transition: 0.5s;
 }
-aside .art:hover{
+
+aside .art:hover {
     transform: scale(1.2);
     background-color: cornflowerblue;
 }
 
-#sec3{
+#sec3 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#sec3 .square{
+
+#sec3 .square {
     background-color: red;
     width: 20%;
     height: 290px;
@@ -113,22 +118,23 @@ aside .art:hover{
     align-items: center; */
     /* border-radius: 20px;
     box-shadow: 5px 5px 10px gray; */
-    
+
     border-radius: 10px;
-} 
-#sec3 .square:hover{
+}
+
+#sec3 .square:hover {
     transition: 1s;
     background-color: coral;
-    transform:scale(1.2) ;
+    transform: scale(1.2);
 }
 
 footer {
-    background-color:pink;
+    background-color: pink;
     color: white;
     width: 100%;
     height: 100px;
     text-align: center;
-    line-height: 100px; 
+    line-height: 100px;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
     /* border: 2px solid red; */
@@ -137,7 +143,7 @@ footer {
 
 
 
-.container1{
+.container1 {
     display: none;
 }
 
@@ -151,17 +157,13 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
 .box {
-    width: 100px;
-    height: 100px;
     cursor: pointer;
     position: relative;
-    background-image: linear-gradient(red 50%,green 50%);
-    border-radius: 50%;
-    animation: bouncing 0.5s ease 0s infinite alternate both;
+    animation: bouncing 0.8s infinite alternate both;
 }
 
 
@@ -178,19 +180,48 @@ span {
     font-size: 50px;
 }
 
+.shadow {
+    width: 200px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(50% 50%, #000 0%, #fff 100%);
+    animation: shadow 0.8s linear infinite alternate;
+}
+
+.rotate {
+    width: 60px;
+    height: 60px;
+    background-image: linear-gradient(red 50%, green 50%);
+    border-radius: 50%;
+    animation: rotate 1s linear  infinite  ;
+}
 
 @keyframes bouncing {
     0% {
-        bottom: 0;
-        box-shadow: 0 0 5px rgb(0, 0, 0 , 1);
+        bottom: 20px;
     }
 
     100% {
-        bottom: 50px;
-        box-shadow: 0 50px 50px rgb(0, 0, 0,0.1);
+        bottom: 25%;
     }
 }
 
+@keyframes shadow {
+    0% {
+        width: 50px;
+        height: 20px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 @keyframes flesh {
     0% {
