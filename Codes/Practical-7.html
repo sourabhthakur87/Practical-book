@@ -10,40 +10,57 @@
     <link rel="stylesheet" href="../Css/Practical-7.css">
 </head>
 
-<body>
-    <header id="Header">
-        <h1>Header</h1>
-    </header>
-    <div class="banner">
-        <h1>Banner</h1>
-    </div>
-    <h2>Section-1</h2>
-    <section id="sec1">
-        <div class="circles">circles-1</div>
-        <div class="circles">circles-2</div>
-        <div class="circles">circles-3</div>
-        <div class="circles">circle-4</div>
-    </section>
-    <h2>Section-2</h2>
-    <section id="sec2">
-        <main>Main Content</main>
-        <aside>
-            <article id="art1" class="art">Article-1</article>
-            <article id="art2" class="art">Article-2</article>
-            <article id="art3" class="art">Article-3</article> 
-        </aside>
-    </section>
-    <h2>Section-3</h2>
-    <section id="sec3">
-        <div id="square" class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-    </section>
+<body onload="loading()">
+    <div class="container">
+        <div class="box">
 
-    <footer id="footer">
-        <h1>Footer</h1>
-    </footer>
+        </div>
+        <div>Loading<span>...</span></div>
+    </div>
+    <div class="container1">
+        <header id="Header">
+            <h1>Header</h1>
+        </header>
+        <div class="banner">
+            <h1>Banner</h1>
+        </div>
+        <h2>Section-1</h2>
+        <section id="sec1">
+            <div class="circles">circles-1</div>
+            <div class="circles">circles-2</div>
+            <div class="circles">circles-3</div>
+            <div class="circles">circle-4</div>
+        </section>
+        <h2>Section-2</h2>
+        <section id="sec2">
+            <main>Main Content</main>
+            <aside>
+                <article id="art1" class="art">Article-1</article>
+                <article id="art2" class="art">Article-2</article>
+                <article id="art3" class="art">Article-3</article>
+            </aside>
+        </section>
+        <h2>Section-3</h2>
+        <section id="sec3">
+            <div id="square" class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </section>
+
+        <footer id="footer">
+            <h1>Footer</h1>
+        </footer>
+    </div>
+    <script>
+             function loading(){
+            setTimeout(disableloder,1000);
+        }
+        function disableloder(){
+            document.querySelector('.container').style.display='none'
+            document.querySelector(".container1").style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
