@@ -266,7 +266,7 @@
         border-radius: 10px;
         width: 350px;
         width: 250px;
-        margin-left: 60px;
+        margin-left: 50px;
     }
     .heding{
         margin-top: 50px;
@@ -275,7 +275,7 @@
     #sec4{
         display: flex;
         flex-direction: column;
-        margin: 20px;
+        margin: 10px;
     }
     #sec4 .cards{
         width: 328px;
