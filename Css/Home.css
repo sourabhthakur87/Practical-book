@@ -122,3 +122,24 @@ td:last-child {
 a {
     text-decoration: none;
 }
+
+
+@media screen and (max-width:500px) {
+    #sec1{
+        width: 100%;
+    }
+    #sec1 #imag img{
+        width: 100%;
+    }
+    table{
+        width: 100%;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    p{
+        margin: 20px;
+    }
+}
