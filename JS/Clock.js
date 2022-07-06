@@ -29,7 +29,7 @@ setInterval(() => {
 
     hour.innerHTML = h + "<br><span>Hours</span>";
     Minutes.innerHTML = m + "<br><span>Minutes</span>";
-    Seconds.innerHTML = s + "<br><span>Second</span>";
+    Seconds.innerHTML = s + "<br><span>Seconds</span>";
     ampm.innerHTML = am;
 
 
