@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+#time {
+    font-size: 8rem;
+    /* margin-bottom: 0rem; */
+  }
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+  h2 {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    opacity: 0.5;
+  }
