@@ -91,3 +91,17 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
 }
+
+
+
+@media screen and (max-width:500px) {
+    #time{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #time .ap{
+        margin-left: 80px;
+    }
+    
+}
