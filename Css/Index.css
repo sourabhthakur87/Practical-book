@@ -94,9 +94,10 @@ thead tr:last-child th {
     border-bottom: 3px solid #ddd;
 }
 
-tbody tr:hover {
-    background-color: #231414;
+tbody tr:hover{
+    background-color: rgb(32, 48, 51);
     cursor: default;
+    color: white;
 }
 
 tbody tr:last-child td {
@@ -124,6 +125,9 @@ td:last-child {
 
 a {
     text-decoration: none;
+}
+a:hover{
+    color: blue;
 }
 
 
