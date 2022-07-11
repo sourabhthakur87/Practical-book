@@ -94,11 +94,11 @@ thead tr:last-child th {
     border-bottom: 3px solid #ddd;
 }
 
-tbody tr:hover{
+/* tbody tr:hover{
     background-color: rgb(32, 48, 51);
     cursor: default;
     color: white;
-}
+} */
 
 tbody tr:last-child td {
     border: none;
@@ -127,7 +127,7 @@ a {
     text-decoration: none;
 }
 a:hover{
-    color: blue;
+    color: red;
 }
 
 
