@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.717);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.box {
+    position: absolute;
+    width: 1100px;
+    height: 95vh;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.prv {
+
+    position: absolute;
+    top: 40%;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    left: 20px;
+
+}
+
+.next {
+    position: absolute;
+    top: 40%;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    right: 20px;
+}
+
+
+
+.nav-btn {
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(36, 43, 48);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+
+.nav-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.box button {
+    position: fixed;
+    left: 80%;
+    top: 30px;
+    background-color: #3cb46e;
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box button a {
+    text-decoration: none;
+    color: white;
+    /* font-size: 20px; */
+}
+
+
+.icon {
+    position: fixed;
+    top: 30px;
+    width: 40px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    color: gray;
+}
+
+.fa-plus {
+    left: 76%;
+}
+
+.fa-heart {
+    /* color: gray; */
+    left: 72%;
+}
+
+.box button:hover {
+    background-color: #11b053;
+}
+
+.icon:hover {
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+.imgbox {
+    position: fixed;
+    top: 14%;
+    left: 15%;
+}
+
+.imgbox img {
+    width: 900px;
+    height: 466px;
+}
+.item{
+    position: absolute;
+    display: none;
+}
+
+.main{
+    display: block;
+}
+.item .caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.461);
+    color: white;
+}
