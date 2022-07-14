@@ -31,7 +31,6 @@ function insertData(e) {
         }).catch((error) => { alert("Unsuccessful", error) });
     }
 
-    
 
 
     clearFormData();
