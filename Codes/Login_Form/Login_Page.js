@@ -21,7 +21,7 @@ function insertData(e) {
         alert("Input Fields cannot be Blank")
     }
     else {
-        set(ref(db, "data/" + emailv), {
+        set(ref(db, "data/" + namev), {
             Email: emailv,
             Name: namev,
             Pass: passv,
@@ -35,7 +35,6 @@ function insertData(e) {
 
     clearFormData();
 }
-
 
 
 
