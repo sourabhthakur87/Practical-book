@@ -62,3 +62,17 @@ function clearData() {
 
 
 
+document.getElementById("eye").onclick=toggle;
+var state=false;
+function toggle(){
+    if(state){
+        document.getElementById("pass").setAttribute("type","password");
+        state=false;
+        document.getElementById("eye").style.color="black"
+    }else{
+        document.getElementById("pass").setAttribute("type","text");
+        state=true;
+        document.getElementById("eye").style.color="green"
+
+    }
+}

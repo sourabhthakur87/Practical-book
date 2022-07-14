@@ -1,80 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css"
+    integrity="sha512-LKG0Zi6duJ5mwncLtQVchN0iF8fWmcxApuX9pqGq7ITgwQDWR9EqZFsrV9TXfE9pPRa1J6GVnsBl7gKxAyllaA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
     <title>Sign_In</title>
 
 
     <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.container {
-    margin: auto;
-    margin-top: 30px;
-    width: 700px;
-    height: 500px;
-    background: linear-gradient(rgb(216, 189, 189), #3ab397);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-}
+        .container {
+            margin: auto;
+            margin-top: 30px;
+            width: 700px;
+            height: 500px;
+            background: linear-gradient(rgb(216, 189, 189), #3ab397);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+        }
 
-.container1 {
-    margin: auto;
-    margin-top: 23px;
-    width: 600px;
-    height: 450px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-}
+        .container1 {
+            margin: auto;
+            margin-top: 23px;
+            width: 600px;
+            height: 450px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+        }
 
-.container1 h1 {
+        .container1 h1 {
 
-    color: #3ab397;
-    font-size: 50px;
+            color: #3ab397;
+            font-size: 50px;
 
-    margin: 20px;
-}
+            margin: 20px;
+        }
 
-input{
-    margin: 10px;
-    padding: 8px;
-    width: 300px;
-}
+        input {
+            margin: 10px;
+            padding: 8px;
+            width: 300px;
+        }
 
-.btn{
-    text-align: center;
-    width: 120px;
-    height: 35px;
-    background: #3ab397;
-    line-height: 35px;
-    border-radius: 20px;
-    margin-left: 90px;
-    margin-top: 10px;
-}
-
-
-.btn a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
+        .btn {
+            text-align: center;
+            width: 120px;
+            height: 35px;
+            background: #3ab397;
+            line-height: 35px;
+            border-radius: 20px;
+            margin-left: 90px;
+            margin-top: 10px;
+        }
 
 
+        .btn a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+
+        span {
+            position: relative;
+            left: -13%;
+            cursor: pointer;
+        }
+
+        #eye {
+            width: 25px;
+            height: 25px;
+            border: 1px solid black;
+            border-radius: 50%;
+            line-height: 23px;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="container1">
@@ -82,14 +106,19 @@ input{
             <form action="">
                 <input type="email" placeholder="Email" id="email" autocomplete="username">
                 <br>
-                <input type="password" placeholder="password" id="pass" autocomplete="current-password">
-                
+                <div class="show">
+                    <input type="password" placeholder="password" id="pass" autocomplete="current-password">
+
+                    <span><i class="fa fa-eye" aria-hidden="true" id="eye"></i>
+                    </span>
+                </div>
+
                 <div class="btn" id="btn">
                     <a href="">Sign In</a>
                 </div>
             </form>
         </div>
-        
+
     </div>
 
 
@@ -97,4 +126,5 @@ input{
 
     <script type="module" src="./Sign_In.js"></script>
 </body>
+
 </html>
