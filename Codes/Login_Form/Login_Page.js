@@ -27,10 +27,11 @@ function insertData(e) {
             Pass: passv,
         }).then(() => {
             alert("Data Stored Successfully")
+            window.location.href = "./Cong.html"
         }).catch((error) => { alert("Unsuccessful", error) });
     }
 
-
+    
 
 
     clearFormData();
