@@ -1,3 +1,4 @@
+
 import { getDatabase, get, set, child, update, remove, ref } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-database.js";
 
 var namev, emailv, passv;
